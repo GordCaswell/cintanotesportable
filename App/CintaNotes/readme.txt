@@ -59,6 +59,28 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+Nov 12, 2015  Version 3.0.2
+   Enhancements:
+   - Link fields are no longer lost when merging notes
+   - Updater: upon clicking on download, display additional warning if the 
+     license key won't be valid for the downloaded version
+
+   Fixes:
+   - "Database is locked" error when switching to the same encrypted notebook
+   - Possible PasswordEnterCancelledException after PC wakes up from sleep
+   - Wrong sort order displayed in newly created sections
+   - Regression: Notes list: Attachments not visible when note body is empty
+   - Tag sidebar: Shift+Alt+click activated non-related excluded tags
+   - Tag sidebar: Ctrl-Alt-click on a tag expanded whole tag tree
+   - Tag sidebar: Shift-clicking on a tag included all excluded tags
+   - Simplenote sync: fix crash when syncing attachments while working over proxy
+   - Export to XML: tags and notes were unordered
+   - Editor: Links with certain characters were not recognized correctly
+   - Editor: bug when replacing selection by typing one symbol and then undoing it 
+   - Editor: fixed possible notelink damaging
+   - Editor: F3 "search inside words" inconsistent with notes list search settings
+  
+
 Oct 20, 2015  Version 3.0.1
    Enhancements:
    - Notes list: Highlight the link icon when search term appears in the Link field
