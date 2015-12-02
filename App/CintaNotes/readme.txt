@@ -59,6 +59,34 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+Nov 27, 2015  Version 3.1
+   Features:
+   - Notes list: display remarks preview
+   - Options/Notes list: add configuring of remarks preview display
+   - Added "Options/Tags/Context-Sensitive Suggestions" option. When active, only
+     tags from currently active sections will be suggested for autocomplete.
+   - Notebook encryption: add "Lock when PC is locked" option
+
+   Enhancements:
+   - Editor: improve handling of local cintanotes:// links
+     Now such links are handled by CintaNotes itself, without using the system 
+     protocol handler
+   - Improve speed of mouse wheel scrolling of tag suggestions
+   - Moved help online, what reduced the size of the distribution package by 30%. 
+   - Localized help is now opened for Russian and German UI languages.
+
+   Fixes:
+   - Clipping of numbered lists removed first number
+   - Ad-hoc "Timer N not in the registry" error
+   - Simplenote sync: crash when chosing "Use system proxy" when in fact system
+     was not configured to use a proxy   
+   - Regression: "Linked note not found" error on normal http links
+   - Search: word exclusion with (-) sign didn't work when attachments field 
+     was included in search
+   - Fixed random crashes upon pasting rich text into note editor
+   - Numbered lists with empty lines are now recognized upon clipping or pasting
+   - Note properties: date time picker should use system's date and time format
+
 Nov 12, 2015  Version 3.0.2
    Enhancements:
    - Link fields are no longer lost when merging notes
