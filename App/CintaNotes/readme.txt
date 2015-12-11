@@ -59,6 +59,28 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+Dec  8, 2015  Version 3.1.1
+   Enhancements:
+   - Added settings option "selection.followedited" to control whether focus
+     should follow the edited note (enabled by default)
+   - Added settings option "tags.hierarchy.backslashes" which determines if
+     tag input fields should automatically convert backslashes to forward slashes.
+   - Improved display of note preview when note has remarks but no text
+   - Editor: only suggest tags from edited note's section in context-sensitive 
+     tag suggestions
+
+   Fixes:
+   - Fixed one remaining possible reason for crashes upon pasting rich text 
+     into note editor
+   - Main windows position was not saved when exiting the program using 
+     tray menu
+   - Regression: tags autocomplete popup cut off text
+   - Editor: undo of some formatting changes didn't work
+   - Search by tag text didn't properly implement whole word search
+     (i.e. when "search inside words" was turned off)
+   - Main window was needlessly activated after using "Add new note" hotkey
+
+
 Nov 27, 2015  Version 3.1
    Features:
    - Notes list: display remarks preview
