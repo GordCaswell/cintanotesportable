@@ -59,6 +59,152 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+Sep 6, 2016  Version 3.3.1 
+   Enhancements:
+   - Highlight the note that is about to receive drag-and-dropped tag   
+   - Editor: add space to tags after saving a note
+
+   Fixes:
+   - Fix tag list scroll buttons behavior
+   - Drag-and-drop shouldn't cause main window to lose focus
+   - Dragged notes should appear selected
+   - Editor: fix random jump when clicking in the note body after scrolling 
+      with mouse wheel
+
+
+Aug 31, 2016  Version 3.3 
+   Features:
+   - Drag-n-drop tags onto notes
+   - Drag-n-drop notes onto sections
+
+   Enhancements:
+   - Rules: update deafult rule name in real-time during editing
+   - Rules: add F8 shortcut to call up Rules list
+
+   Fixes:
+   - Message dialogs: "Don't ask again" didn't work when selecting "No"
+   - HTML export: bullets not indented properly
+   - Rules: sometimes condition and action values were replaced by section names
+   - Rules editor: fix incorrect TAB order and initial focus   
+   - Rules: rule actions upon save weren't always reflected in the note editor
+   - Rules: switching db should be prohibited when rule editor is displayed 
+   - Rules: "have parents of" condition for tags produced SQLite error when 
+      specified tag doesn't have parents
+     
+
+Aug 18, 2016  Version 3.2.1
+   Enhancements:
+   - Rules: add "has children of" and "has parents of" operators to Tags field
+   - Rules: add "comes before" and "comes after" operators for text fields
+
+   Fixes:
+   - Editor: fixed error when deleting note using Ctrl+Del
+   - "Open in editor" should be disabled when silent clipping mode is on
+   - Rules: fix "for all notes" rule condition not working
+   - Rules: fix TAB, ESC don't work in note editor when rule editor is open
+   - Rules: "Remove tag" action should also remove child tags of specified tag 
+   - HTML export: printing note text only produces gray borders that gets wider
+   - Fix possible error upon program restart
+   - Notes list: Tag capitalization had effect on ordering in preview
+   - Notes list: tags are incorrectly shortened with ellipsis
+   - Tag sidebar: untagged count display was not always correct
+   - Editor: Wrong control positions after modified date is displayed
+   - Alt +F didn't always activate File menu
+   - Section limit in free version didn't consider section names   
+
+
+Jul 27, 2016  Version 3.2 
+   Features:
+   - Autotagging Rules 
+     Automatic assignment of tags and sections to notes. See "File / Rules" menu item
+   
+   Enhancements:
+   - New "Notebook" top level menu 
+     Moved there items related to currently active notebook from "File"
+   - File attachments: add ability to save to disk multiple attachments at once
+   - Editor: add advanced option to copy text without formats 
+     ("editor.copyplaintextonly" in cintanotes.settings)
+
+   Fixes:
+   - PasswordEnterCancelledException after canceling adding note
+   - Simplenote sync: synchronization no longer resets note selection
+   - Editor: std::out_of_range raised on save
+   - Notes list: RTL numbered lists were rendered incorrectly
+   - Simplenote sync: failure to sync from behind a proxy
+   - Large DPI sizing problems
+   - Tag drag and drop highlighting problems
+   - Tag drag and drop: didn't always correctly process mouse leaving
+   - Fixed HotKeyEditor Ctrl + Alt bug
+   - Import from a password-protected older format notebook required entering 
+     password twice
+   - Deleting section didn't also delete autodeletable tags
+   - Replacing and renaming tags was extremely slow on large number of tags 
+     and notes
+   - Negative search didn't work correctly with "anywhere" or "attachments" fields
+   - HTML export: wrong rendering of RTL text
+
+May 19, 2016  Version 3.1.4
+   Enhancements:
+   - File attachments: add ability to save to disk multiple attachments at once
+   - Export, Print: add ability to select/deselect all fields with a single click
+   - Editor: add cintanotes.settings option to copy text without formats
+     ("editor.copyplaintextonly")
+
+   Fixes:
+   - Notes list: RTL numbered lists were rendered incorrectly
+   - Simplenote sync: synchronization reset note selection
+   - Editor: possible std::out_of_range error upon saving
+   - Tag drag and drop: fixed some highlighting problems
+   - Tag drag and drop: tag sidebar didn't always handle mouse leaving
+   - Hot keys: it was possible to set "Ctrl + Alt" as a shortcut
+   - Import from a password-protected older format notebook required 
+     entering password twice
+   - Fixed some large DPI sizing problems
+   - Deleting section didn't delete autodeletable tags
+   - Replacing tags was extremely slow on large number of tags and notes
+   - Fixed PasswordEnterCancelledException after canceling adding note
+   - Fixed PasswordEnterCancelledException when entering tags in note editor
+   - Fixed "Failed to activate an already running application instance" when 
+     running second instance of CN   
+   - Fixed possible InvalidArgumentException upon search start
+
+Mar 21, 2016  Version 3.1.3
+   Enhancements:
+   - Drag-and-dropping of tags within the Tag sidebar          
+   - Option to use single Tab press to insert TAB character instead of Ctrl+Tab
+     (see "Options/Editor/Tab Character" menu)
+
+   Fixes:
+   - Clipping: backlinks to documents were not always added even when they were 
+     present in the process's command line
+   - CN didn't restore to maximized size from system tray
+   - Link to file not copied properly if path contained non-ASCII characters
+   - Notes count control was cut off at 120 DPI
+   - Display scaling caused CintaNotes to crash in Windows 10
+   - Unnecessary save confirmation on pressing Esc in empty new note
+   - "Database locked" error when CN was used on a network share
+
+Feb 15, 2016  Version 3.1.2
+   Enhancements:
+   - Focus top note during the search
+   - Simplenote sync: don't run sync on startup if last sync was recent enough
+   - Editor: improve Esc key handling
+     Esc now cancels by default. Old behavior still available via the new
+     "Options/Editor/Auto Save Changes on Esc" option
+
+   Fixes:
+   - Export and Print: Field lists need to hide the "&" sign
+   - Editor: wrong double-click word selection behavior
+   - Incorrect error message when trying to open a corrupted notebook
+   - Controls were being cut off at 120 DPI
+   - Error when creating a notebook while an attachment is opened for editing
+   - Possible PasswordEnterCancelledException on OS restart
+   - Duplicate parent tag can be created when creating child tag directly 
+     from editor
+   - Search in attachments for "-." was not working
+   - Export, Print: increased height of field lists to eliminate need to scroll
+
+
 Dec  8, 2015  Version 3.1.1
    Enhancements:
    - Added settings option "selection.followedited" to control whether focus
