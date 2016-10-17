@@ -59,6 +59,22 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+
+Oct 17, 2016  Version 3.4 
+   Features:
+   - Drag-and-drop reordering of section tabs
+
+   Enhancements:
+   - Rules: option to hide rule application notifications
+     Added menu item "Options / Rules / Notify When Applied"
+   - Import: "Import rules" checkbox
+   - Editor: option to turn off automatic adding of space to the Tags field
+     Added "editor.tagsfield.autoaddspace" parameter to cintanotes.settings
+
+   Fixes:
+   - Keyboard issue with the rules log dialog
+
+ 
 Sep 6, 2016  Version 3.3.1 
    Enhancements:
    - Highlight the note that is about to receive drag-and-dropped tag   
