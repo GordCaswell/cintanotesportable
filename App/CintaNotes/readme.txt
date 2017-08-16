@@ -59,6 +59,34 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+Aug 15, 2017   Version 3.9.1
+   Fixes:
+   - Fixed issues with window docking on high-DPI screens
+   - Fixed issues with clipping from MS Edge browser on Windows 10
+   - Clipping from LibreOffice or TextMaker inserted raw HTML into notes
+   - Regression: editor window auto-closes on fast text selection
+   - Removed unnecessary warning about exceeding size Limit for attachment 
+     synchronization when sync is not active
+     
+
+Jul 26, 2017   Version 3.9
+   Features:
+   - Dock main and editor windows to screen edges
+   - Dock editor windows to main window
+
+   Enhancements:
+   - Clipping: don't record browser name in note title
+
+   Fixes:
+   - Regression: extra newlines when clipping HTML from Firefox
+   - Synchronization: fix syncing attachments when WebDAV returned error
+   - HTML clipping: empty bullets in lists when clipping from Firefox
+
+
+Jul 19, 2017   Version 3.8.2 Beta1
+   Fixes:
+   - Regression: extra newlines when clipping HTML from Firefox
+
 Jul 10, 2017   Version 3.8.1
    Enhancements:
    - Links to attachments: usability improvements
