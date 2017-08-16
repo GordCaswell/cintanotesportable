@@ -59,6 +59,111 @@ feedback forum: http://cintanotes.userecho.com
 Version History
 ------------------------------------------------------------------------------
 
+Jul 10, 2017   Version 3.8.1
+   Enhancements:
+   - Links to attachments: usability improvements
+  
+   Fixes:
+   - Extra spaces inside brackets after clipping text with HTML formatting
+   - Regression: CN window not activated when activating existing instance
+   - Editor windows not reopened after File/Exit
+   - Editor: minor note link issues
+   - Link protocol registration popup not always visible
+   - Regression: custom protocols not working in the Link field
+   - Editor: disable drag and drop of text which was not undoable
+
+Jun 7, 2017   Version 3.8
+   Features:
+   - Autosave currently edited note
+     Completely transparent to the user: in case of crash or power failure,
+     edited note will be reopened after startup.
+   - Editor: Added "Paste as plain text" command to context 
+     menu with Ctrl+Alt+V shortcut
+   - Added option to auto minimize on losing focus to the Options menu.
+      Use Options/Window/Minimize on losing focus submenu to configure timeout.
+
+   Enhancements:
+   - Notes list: more prominent display of selected tags in note previews
+   - Retain tag filter when hiding tag sidebar
+   - Double the length limit for names of note links 
+   - "Window/Close to tray" option is now active by default
+   - "Window/Minimize to tray" option is now not active by default
+   - Added "--close" ("-c") command line option to close all app instances from 
+      batch files
+
+   Fixes:
+   - Updates subscription ending notification couldn't be hidden
+   - Editor: fixed extremely slow opening of some notes
+   - Editor: entering uppercase accented letters was not possible in some locales.
+      Added "editor.shortcuts.rightalt.enabled" option to regulate this.
+   - Remembered password shouldn't be requested upon clipping   
+   - Recycle bin: zlib decompress error upon opening
+   - Rules: rule windows underneath main window when main window is "always on top"
+   - Don't focus main window after closing editor if main window wasn't active when 
+      this editor was created
+   - Editor: Pasting from Outlook inserted "&nbsp"'s
+   - Print and HTML export: line breaks in wrong places
+  
+
+Apr 25, 2017  Version 3.7
+   Features:
+   - Drag-and-dropping text from any application into CintaNotes
+
+   Fixes:
+   - Clipping shortcuts with Windows key not working
+   - Clipping: possible error upon clipping
+   - Tag sidebar: wrong tag counts after cancelled import
+   - Import: Exception after canceling import
+   - Editor: crash during paste
+   - Editor: attachment item height shouldn't depend on icon size
+   - Printing: "current view" now enabled even when there are no filters applied
+   - Pasting HTML in editor now obeys Options/Clipping/Formatting settings
+   - Tag autocomplete shouldn't disappear on BkSp, but continue showing appropriate results
+
+
+Mar 23, 2017  Version 3.6
+   Features:
+   - Parse HTML for links and basic formatting upon clipping
+   - New Options/Clipping/Formatting submenu
+   - Support pasting of HTML into notes list and note editor
+
+   Enhancements:
+   - Note links: open another notebook's note if it exists in opened notebook
+   - Make scrollbars clickable when window is maximized and mouse is at the rightmost edge
+
+   Fixes:
+   - Export: XML not created when previous directory is removed
+   - Note links: keyboard shortcuts didn't work in Russian
+   - HTML export: regression - no spacing between paragraphs
+   - Editor: tab indents not lining up correctly
+   - Drag and drop: block keyboard while drag
+   - Editor: unwanted keyboard layout change upon paste
+   - Notes list: weird selection behavior when selection.followedited = 0
+   - About dialog: missing licensee info
+   - Simplenote sync: sync could fail because of certificate security error
+   - Clipping was not always working in IE9+
+
+
+Dec 22, 2016  Version 3.5 
+   Features:
+   - Simplenote sync is now free
+   - Links to attached files 
+     Added ability to insert links to attached files into note text
+
+   Enhancements:
+   - 10-day trial PRO license is now included by default
+   - 30-day extended trial available per request
+   - Ability to choose active license type
+   - Lock note drag-and-drop when scrolling note text 
+      (when left mouse button is held and wheel scrolled)
+
+   Fixes:
+   - HTML export: force keeping spaces if note text font is monospaced
+   - Possible error when deleting note from Recycle Bin
+   - Tag sidebar: unwanted tag list scroll (regression)
+   - Rules: backslash symbol not properly escaped in rule conditions
+   - Notes list: Wrong timestamp highlighting
+
 
 Oct 17, 2016  Version 3.4 
    Features:
@@ -73,7 +178,6 @@ Oct 17, 2016  Version 3.4
 
    Fixes:
    - Keyboard issue with the rules log dialog
-
  
 Sep 6, 2016  Version 3.3.1 
    Enhancements:
